@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    body { font-family: sans-serif; width: 300px; margin: 10px; }
+    textarea { width: 100%; height: 150px; }
+	.hidden { display: none; }
+    .confirm-box {
+      background: #f9f9f9;
+      border: 1px solid #ccc;
+      padding: 10px;
+      margin-top: 10px;
+    }
+    .confirm-box button {
+      margin-right: 5px;
+    }
+  </style>
+</head>
+<body>
+  <h3>Note for this URL:</h3>
+  <textarea id="note"></textarea>
+  <div>
+    <button id="save">Save</button>
+    <button id="delete" class="hidden">Delete</button>
+  </div>
+  <div id="confirmBox" class="confirm-box hidden">
+    <p>Delete this note?</p>
+    <button id="confirmDelete">Yes</button>
+    <button id="cancelDelete">Cancel</button>
+  </div>
+  <script src="popup.js"></script>
+</body>
+</html>
