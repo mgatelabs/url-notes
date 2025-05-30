@@ -1,7 +1,7 @@
 {
   "manifest_version": 3,
   "name": "URL Notes",
-  "version": "0.2",
+  "version": "0.3",
   "description": "Take and store local notes per-URL",
   "permissions": ["tabs", "storage"],
   "host_permissions": ["<all_urls>"],
@@ -27,5 +27,9 @@
     "gecko": {
       "id": "urlnotes@mgatelabs.com"
     }
+  },
+  "options_ui": {
+  "page": "options.html",
+  "open_in_tab": true
   }
 }
